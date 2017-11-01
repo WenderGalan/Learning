@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Layout Application</string>
+    <string name="estoria1">Existem duas portas, direita e esquerda:\n\nQual você abre?</string>
+    <string name="btn_1">Esquerda</string>
+    <string name="btn_2">Direita</string>
+    <string name="game_over">FUCK YOU</string>
+</resources>

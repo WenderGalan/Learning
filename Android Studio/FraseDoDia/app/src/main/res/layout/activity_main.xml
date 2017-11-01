@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#de7905"
+    tools:context="cursoandroid.com.frasedodia.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp"
+    android:weightSum="1">
+
+
+    <Button
+        android:id="@+id/botaoNovaFraseId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/texto_frase_dia" />
+
+    <TextView
+        android:id="@+id/textoNovaFraseId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/botaoNovaFraseId"
+        android:layout_alignLeft="@+id/botaoNovaFraseId"
+        android:layout_alignRight="@+id/botaoNovaFraseId"
+        android:layout_alignStart="@+id/botaoNovaFraseId"
+        android:layout_below="@+id/botaoNovaFraseId"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/texto_nova_frase" />
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cursoandroid.com.jogodavelha.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:baselineAligned="false">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_weight="0.32">
+
+        <Button
+            android:id="@+id/botao_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/tamanho_opcao"
+            android:layout_weight="0.33" />
+
+        <Button
+            android:id="@+id/botao_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/tamanho_opcao"
+            android:layout_weight="0.33" />
+
+        <Button
+            android:id="@+id/botao_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/tamanho_opcao"
+            android:layout_weight="0.33" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_weight="0.32">
+
+        <Button
+            android:id="@+id/botao_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/tamanho_opcao"
+            android:layout_weight="0.33" />
+
+        <Button
+            android:id="@+id/botao_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/tamanho_opcao"
+            android:layout_weight="0.33" />
+
+        <Button
+            android:id="@+id/botao_6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/tamanho_opcao"
+            android:layout_weight="0.33" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_weight="0.32">
+
+        <Button
+            android:id="@+id/botao_7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/tamanho_opcao"
+            android:layout_weight="0.33" />
+
+        <Button
+            android:id="@+id/botao_8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/tamanho_opcao"
+            android:layout_weight="0.33" />
+
+        <Button
+            android:id="@+id/botao_9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/tamanho_opcao"
+            android:layout_weight="0.33" />
+
+    </LinearLayout>
+
+</LinearLayout>
