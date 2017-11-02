@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Introdução ao Vue JS</title>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+
+    <div id="app">
+
+      <gui-titulo v-bind:titulo="meuTitulo"></gui-titulo>
+
+      <input type="text" v-model="meuTitulo">
+
+      <gui-tabela v-bind:titulos="['Título','Descrição','Link']" v-bind:registros="registros"></gui-tabela>
+
+      <p v-once>{{meuTitulo}}</p>
+
+      <p v-html="html"></p>
+
+      <p>{{ 25.988475235 | TrataValor }}</p>
+
+      <ul>
+        <li v-for="registro in registros">
+          {{registro.titulo}} - {{registro.descricao}} - {{registro.link}} - {{registro.valor | TrataValor}}
+        </li>
+      </ul>
+
+      <p>Total (methods): {{totalValorMetodo() | TrataValor}}</p>
+      <p>Total (methods): {{totalValorComputed | TrataValor}}</p>
+      <p>contaMethods: {{contaMethods}}</p>
+      <p>contaComputed: {{contaComputed}}</p>
+      <p>
+        <input type="text" name="" v-model="nome" placeholder="Nome">
+      </p>
+      <p>Alterações: {{contaAlteracoes}}</p>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+      Vue.component('gui-titulo',{
+        props:['titulo'],
+        template:'<h2>{{ titulo }}</h2>'
+      });
+
+      Vue.component('gui-tabela',{
+        props:['titulos','registros'],
+        template:'<table style="width:100%">'+
+          '<thead>'+
+            '<tr>'+
+              '<th v-for="titulo in titulos">{{titulo}}</th>'+
+            '</tr>'+
+          '</thead>'+
+          '<tbody>'+
+            '<tr v-for="registro in registros">'+
+              '<td v-for="item in registro">{{item}}</td>'+
+            '</tr>'+
+          '</tbody>'+
+        '</table>'
+      });
+
+      var app = new Vue({
+        el:"#app",
+        data:{
+          meuTitulo:'Esse é o Título',
+          registros:[
+            {titulo:'Título 1',descricao:'descricao1',link:'link1',valor:23.456453},
+            {titulo:'Título 2',descricao:'descricao2',link:'link2',valor:10.4345},
+            {titulo:'Título 3',descricao:'descricao3',link:'link3',valor:23}
+          ],
+          html:'<a href="#">Esse é um link</a>',
+          contaMethods:0,
+          contaComputed:0,
+          nome:'',
+          contaAlteracoes:0
+        },
+        filters:{
+          TrataValor: function(valor) {
+            return ('R$ '+(valor).toFixed(2)).replace('.', ',');
+          }
+        },
+        methods:{
+          totalValorMetodo: function() {
+            //this.contaMethods++;
+            var total = 0;
+            for(item of this.registros){
+              total += item.valor;
+            }
+            return total;
+          }
+        },
+        computed:{
+          totalValorComputed: function() {
+            this.contaComputed++;
+            var total = 0;
+            for(item of this.registros){
+              total += item.valor;
+            }
+            return total;
+          }
+        },
+        watch:{
+          nome:function(valor) {
+            this.contaAlteracoes++;
+            this.nome = valor.toUpperCase();
+          }
+        }
+
+      });
+
+
+    </script>
+
+  </body>
+</html>
