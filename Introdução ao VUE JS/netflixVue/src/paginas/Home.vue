@@ -7,8 +7,7 @@
 
 <script>
 
-//import testeGui from './componentes/teste.vue';
-import Categoria from './componentes/Categoria.vue';
+import Categoria from '../componentes/Categoria.vue';
 
 export default {
   name: 'app',
