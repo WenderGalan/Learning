@@ -1,0 +1,64 @@
+{
+  "categorias": [
+    {
+      "id":1,
+      "titulo":"Aventura",
+      "filmes":[
+        {
+          "id":1,"titulo":"Mulher Maravilha","imagem":"http://diariodegoias.com.br/images/stories/imagens/2017/junhos/mulher_maravilha.jpg"
+        },
+        {
+          "id":2,"titulo":"Mulher Maravilha","imagem":"http://diariodegoias.com.br/images/stories/imagens/2017/junhos/mulher_maravilha.jpg"
+        },
+        {
+          "id":3,"titulo":"Mulher Maravilha","imagem":"http://diariodegoias.com.br/images/stories/imagens/2017/junhos/mulher_maravilha.jpg"
+        },
+        {
+          "id":4,"titulo":"Mulher Maravilha","imagem":"http://diariodegoias.com.br/images/stories/imagens/2017/junhos/mulher_maravilha.jpg"
+        },
+        {
+          "id":5,"titulo":"Mulher Maravilha","imagem":"http://diariodegoias.com.br/images/stories/imagens/2017/junhos/mulher_maravilha.jpg"
+        },
+        {
+          "id":6,"titulo":"Mulher Maravilha","imagem":"http://diariodegoias.com.br/images/stories/imagens/2017/junhos/mulher_maravilha.jpg"
+        },
+        {
+          "id":7,"titulo":"Mulher Maravilha","imagem":"http://diariodegoias.com.br/images/stories/imagens/2017/junhos/mulher_maravilha.jpg"
+        },
+        {
+          "id":8,"titulo":"Mulher Maravilha","imagem":"http://diariodegoias.com.br/images/stories/imagens/2017/junhos/mulher_maravilha.jpg"
+        }
+      ]
+    },
+    {
+      "id":2,
+      "titulo":"Ação",
+      "filmes":[
+        {
+          "id":1,"titulo":"Thor Ragnarok","imagem":"https://i.ytimg.com/vi/IPRFFJMmm1M/maxresdefault.jpg"
+        },
+        {
+          "id":2,"titulo":"Thor Ragnarok","imagem":"https://i.ytimg.com/vi/IPRFFJMmm1M/maxresdefault.jpg"
+        },
+        {
+          "id":3,"titulo":"Thor Ragnarok","imagem":"https://i.ytimg.com/vi/IPRFFJMmm1M/maxresdefault.jpg"
+        },
+        {
+          "id":4,"titulo":"Thor Ragnarok","imagem":"https://i.ytimg.com/vi/IPRFFJMmm1M/maxresdefault.jpg"
+        },
+        {
+          "id":5,"titulo":"Thor Ragnarok","imagem":"https://i.ytimg.com/vi/IPRFFJMmm1M/maxresdefault.jpg"
+        },
+        {
+          "id":6,"titulo":"Thor Ragnarok","imagem":"https://i.ytimg.com/vi/IPRFFJMmm1M/maxresdefault.jpg"
+        },
+        {
+          "id":7,"titulo":"Thor Ragnarok","imagem":"https://i.ytimg.com/vi/IPRFFJMmm1M/maxresdefault.jpg"
+        },
+        {
+          "id":8,"titulo":"Thor Ragnarok","imagem":"https://i.ytimg.com/vi/IPRFFJMmm1M/maxresdefault.jpg"
+        }
+      ]
+    }
+  ]
+}
