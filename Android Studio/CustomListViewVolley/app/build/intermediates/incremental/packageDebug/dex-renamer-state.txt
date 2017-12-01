@@ -1,7 +1,0 @@
-#Fri Oct 27 22:03:27 AMST 2017
-base.0=C\:\\Users\\wende\\AndroidStudioProjects\\CustomListViewVolley\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_94e347a43da46710f89c893c1dd0639f439409b0
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=C\:\\Users\\wende\\AndroidStudioProjects\\CustomListViewVolley\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_2d0e28e4ad8c0853a6fca874602b003fafa89c6e\\classes.dex
-base.1=C\:\\Users\\wende\\AndroidStudioProjects\\CustomListViewVolley\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_2d0e28e4ad8c0853a6fca874602b003fafa89c6e
-file.0=C\:\\Users\\wende\\AndroidStudioProjects\\CustomListViewVolley\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_94e347a43da46710f89c893c1dd0639f439409b0\\classes.dex

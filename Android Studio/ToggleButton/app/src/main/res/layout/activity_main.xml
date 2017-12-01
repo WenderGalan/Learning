@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="togglebutton.wendergalan.com.togglebutton.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Toggle Button"
+        android:textSize="30dp" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="ToggleButton"
+        android:textOff="Desligado"
+        android:textOn="Ligado" />
+
+    <TextView
+        android:id="@+id/textExibicaoID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggleButtonID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" />
+</RelativeLayout>
