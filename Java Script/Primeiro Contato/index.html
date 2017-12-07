@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color: blue">Minha Primeira Página de Elementos JS</h1>
+<h1 style="color: red">Parei: JS JASON - Próximo: JS FORMS</h1>
+
+<h2>Exemplo 1 - Trocando o atributo da TAG HTMl (src)</h2>
+
+<p>Nesse caso o JS está trocando o atributo da tag em HTML (src)</p>
+
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Ligar a Luz</button>
+
+<img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Desligar a Luz</button>
+
+<p>OBS.: o "document.getElementById('aqui coloca o id').atributo='novo Texto ou algo do tipo'"</p>
+
+<h2>Exemplo 2 - Trocar Atributos da TAG HTML</h2>
+<script>
+	function trocarParagrafo() {
+    	document.getElementById("demo").innerHTML = "O paragrafo foi trocado!";
+	}
+</script>
+<p id="demo">Aqui tenho um paragrafo</p>
+<button type="button" onclick="trocarParagrafo()">Trocar Paragrafo</button>
+
+
+<h2>Exemplo 3 - Mostrar Alerta</h2>
+
+<p>Com o código window.alert('TEXTO DO ALERTA') é possível mostrar um alerta na tela do usuário! Como abaixo!</p>
+<script>
+	function mostrarAlerta(){
+		window.alert('Alerta exibido com sucesso!');
+	}
+</script>
+<button type="button" onclick="mostrarAlerta()">Mostrar Alerta</button>
+
+
+<h2>Exemplo 4 - Imprimir no Console do Navegador DEBUG</h2>
+
+<script>
+	function consoleLog(){
+		console.log('Imprimir no console!');
+	}
+</script>
+<button type="button" onclick="consoleLog()">Imprimir no Console</button>
+
+<h2>Exemplo 5 - Testando a sintaxe</h2>
+<script type="text/javascript">
+	function somar(){
+		var resultado = 5 + 6;
+		window.alert('A soma deu ' + resultado);
+		document.getElementById("resultado").innerHTML = 'A soma deu ' + resultado;
+	}
+</script>
+<button type="button" onclick="somar()">Calcular 5 + 6</button>
+<p id="resultado"></p>
+
+<h2>Exemplo 6 - Operadores diferentes do que conheço</h2>
+<p id="mostrar" style display="none">=== => Valor e tipo iguais <br>
+!== => Valor e tipo não iguais <br>
+? => Operador Ternário <br>
+typeof => Retorna o tipo da variavel <br>
+instanceof => Retorna true se um objeto for uma instância de um tipo de objeto <br></p>
+
+<button type="button" onclick="mostrar()">Mostrar</button>
+<button type="button" onclick="ocultar()">Ocultar</button>
+
+
+<script type="text/javascript">
+	function mostrar(){
+		document.getElementById("mostrar").style.display = 'block';
+	}
+	function ocultar(){
+		document.getElementById("mostrar").style.display = 'none';
+	}
+</script>
+
+<h2>Exemplo 7 - Declarando um array - object - SWITCH - FOR - WHILE - BREAK & CONTINUE</h2>
+<p>var cars = ["Saab", "Volvo", "BMW"];</p>
+<p>Utilizando o ".sort()" em um array ele vai ser ordenado!</p>
+<p>var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};</p>
+<p>A estrutura do switch é a mesma que em JAVA!</p>
+<p>A estrutura do for em Java Script é igual em JAVA!</p>
+<p>A estrutura do while também é igual em JAVA!</p>
+<P>Break e continue também é igual a JAVA!</P>
+
+
+<h2>Exemplo 8 - Alterando o conteúdo do botão</h2>
+<button onclick="this.innerHTML=Date()">Que horas é?</button>
+
+<h2>Exemplo 9 - Eventos do Mouse</h2>
+<p><a href="https://www.w3schools.com/jsref/dom_obj_event.asp">Eventos do Mouse</a></p>
+
+<h2>Exemplo 10 - Recuperar tamanho de uma string</h2>
+<p>O tamanho da string 'txt' é: </p>
+<p id="tamanho"></p>
+
+<script>
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("tamanho").innerHTML = txt.length;
+</script>
+
+<h2>Exemplo 11 - Fórmulas Matemáticas - Random</h2>
+<p><a href="https://www.w3schools.com/js/js_math.asp">Fórmulas Matemáticas</a></p>
+<p><a href="https://www.w3schools.com/js/js_random.asp">Números Random</a></p>
+
+<h2>Exemplo 12 - </h2>
+
+</body>
+</html> 
