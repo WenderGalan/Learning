@@ -1,0 +1,13 @@
+#Fri Nov 03 19:33:40 AMST 2017
+renamed.3=classes.dex
+renamed.2=classes4.dex
+renamed.1=classes2.dex
+renamed.0=classes3.dex
+base.3=C\:\\Users\\wende\\AndroidStudioProjects\\CustomListViewVolley\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-v4-18.0.0_8227735f89c465be597628d0dc0b4aa01ade1243
+base.2=C\:\\Users\\wende\\AndroidStudioProjects\\CustomListViewVolley\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\2\\volley_9368777a931ba5d0052842dd7e01f58737872d38
+base.1=C\:\\Users\\wende\\AndroidStudioProjects\\CustomListViewVolley\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\2\\okhttp-2.5.0_849909bb8a312cc562a7cdeb30e0d1faf1f42512
+base.0=C\:\\Users\\wende\\AndroidStudioProjects\\CustomListViewVolley\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\2\\okio-1.6.0_f25fac8f452f4a636e509521d3b2cfbfb47757e4
+file.3=C\:\\Users\\wende\\AndroidStudioProjects\\CustomListViewVolley\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-v4-18.0.0_8227735f89c465be597628d0dc0b4aa01ade1243\\classes.dex
+file.2=C\:\\Users\\wende\\AndroidStudioProjects\\CustomListViewVolley\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\2\\volley_9368777a931ba5d0052842dd7e01f58737872d38\\classes.dex
+file.1=C\:\\Users\\wende\\AndroidStudioProjects\\CustomListViewVolley\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\2\\okhttp-2.5.0_849909bb8a312cc562a7cdeb30e0d1faf1f42512\\classes.dex
+file.0=C\:\\Users\\wende\\AndroidStudioProjects\\CustomListViewVolley\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\2\\okio-1.6.0_f25fac8f452f4a636e509521d3b2cfbfb47757e4\\classes.dex
