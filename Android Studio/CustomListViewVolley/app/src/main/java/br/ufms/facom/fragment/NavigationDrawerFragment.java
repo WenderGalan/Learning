@@ -10,6 +10,7 @@ import android.preference.PreferenceManager;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -99,17 +100,22 @@ public class NavigationDrawerFragment extends Fragment
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{
 		mDrawerListView = (ListView) inflater.inflate(R.layout.fragment_navigation_drawer, container, false);
-		mDrawerListView.setOnItemClickListener(new AdapterView.OnItemClickListener()
-		{
-			@Override
-			public void onItemClick(AdapterView<?> parent, View view, int position, long id)
-			{
-				selectItem(position);
-			}
-		});
-		mDrawerListView.setAdapter(new ArrayAdapter<String>(getActionBar().getThemedContext(), android.R.layout.simple_list_item_activated_1, android.R.id.text1, new String[]
-		{ getString(R.string.title_section1), getString(R.string.title_section2), getString(R.string.title_section3), }));
+		Log.i("TAG: ", "-------------------fragment_navigation_drawer -------------------" + R.layout.fragment_navigation_drawer);
+
+		Log.i("TAG: ", "-------------------CHEGOU NO OnCreareView: mDrawerListView-------------------" + mDrawerListView);
+		//Log.i("TAG: ", "-------------------CHEGOU NO get -------------------" + getActionBar().getThemedContext());
+		Log.i("TAG: ", "-------------------CHEGOU layout-------------------" + android.R.layout.simple_list_item_activated_1);
+		Log.i("TAG: ", "-------------------CHEGOU text1-------------------" + android.R.id.text1);
+
+
+		mDrawerListView.setAdapter(new ArrayAdapter<String>(getActionBar().getThemedContext(),
+				android.R.layout.simple_list_item_activated_1,
+				android.R.id.text1,
+				new String[]{ getString(R.string.title_section1), getString(R.string.title_section2), getString(R.string.title_section3), }));
+
+		Log.i("TAG: ", "-------------------CHEGOU NO mDrawer -------------------" + mCurrentSelectedPosition);
 		mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
+		Log.i("TAG: ", "-------------------RETORNANDO -------------------" + mDrawerListView);
 		return mDrawerListView;
 	}
 	

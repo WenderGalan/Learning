@@ -4,6 +4,7 @@ import java.util.List;
 
 import android.app.Activity;
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,10 +22,10 @@ public class CustomListAdapter extends BaseAdapter
 	private Activity activity;
 	private LayoutInflater inflater;
 	private List<Movie> movieItems;
+
 	ImageLoader imageLoader = AppController.getInstance().getImageLoader();
-	
-	public CustomListAdapter(Activity activity, List<Movie> movieItems)
-	{
+
+	public CustomListAdapter(Activity activity, List<Movie> movieItems) {
 		this.activity = activity;
 		this.movieItems = movieItems;
 	}

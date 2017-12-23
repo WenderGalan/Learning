@@ -6,6 +6,7 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -34,18 +35,27 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
+		Log.i("TAG: ", "-------------------CHEGOU NO OnCreate: -------------------" + mNavigationDrawerFragment);
+
+		Log.i("TAG: ", "-------------------CHEGOU NO mNavigationDrawerFragment-------------------" + mNavigationDrawerFragment);
 		mNavigationDrawerFragment = (NavigationDrawerFragment) getFragmentManager().findFragmentById(R.id.navigation_drawer);
 		mTitle = getTitle();
-		
+		Log.i("TAG: ", "-------------------CHEGOU NO mTittle: -------------------" + mTitle);
+		Log.i("TAG: ", "-------------------RETORNO ID-------------------" + findViewById(R.id.navigation_drawer));
+
+		Log.i("TAG: ", "-------------------retorno fragmento-------------------" + getFragmentManager().findFragmentById(R.id.navigation_drawer));
+
+
+		Log.i("TAG: ", "-------------------CHEGOU NO Navigation: -------------------" + mNavigationDrawerFragment);
 		// Configura o Navigation Drawer.
 		mNavigationDrawerFragment.setUp(R.id.navigation_drawer, (DrawerLayout) findViewById(R.id.drawer_layout));
+		Log.i("TAG: ", "-------------------Passou do mNavigation -------------------" + mNavigationDrawerFragment);
 	}
 	
 	@Override
-	public void onNavigationDrawerItemSelected(int position)
-	{
+	public void onNavigationDrawerItemSelected(int position) {
 		Fragment fragment;
+		Log.i("TAG: ", "-------------------ENTROU NO OnNavigationDrawerItemSelected -------------------");
 		
 		switch (Sections.toSection(position))
 		{
@@ -62,6 +72,7 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
 	
 	public void onSectionAttached(int number)
 	{
+		Log.i("TAG: ", "-------------------ENTROU NO OnSectionAttached -------------------");
 		switch (number)
 		{
 			case 1:
@@ -78,6 +89,7 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
 	
 	public void restoreActionBar()
 	{
+		Log.i("TAG: ", "-------------------ENTROU NO restoreActionBar -------------------");
 		ActionBar actionBar = getActionBar();
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
 		actionBar.setDisplayShowTitleEnabled(true);
@@ -87,8 +99,8 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu)
 	{
-		if (!mNavigationDrawerFragment.isDrawerOpen())
-		{
+		Log.i("TAG: ", "-------------------ENTROU NO OnCreateOptionsMenu -------------------");
+		if (!mNavigationDrawerFragment.isDrawerOpen()){
 			// Somente mostra items relevantes para a tela atual
 			// se o drawer não está sendo mostrado. Caso contrário, deixo o
 			// drawer
@@ -103,6 +115,7 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
 	{
+		Log.i("TAG: ", "-------------------Entrou no OnOptionsItemSelected -------------------");
 		// Manipula eventos da Action Bar
 		int id = item.getItemId();
 		if (id == R.id.action_settings)
