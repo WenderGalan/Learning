@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "890646968308",
+    "firebase_url": "https://autenticacaofirebase-6f55f.firebaseio.com",
+    "project_id": "autenticacaofirebase-6f55f",
+    "storage_bucket": "autenticacaofirebase-6f55f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890646968308:android:d76dbaaf72c9a01b",
+        "android_client_info": {
+          "package_name": "com.wendergalan.autenticacaousuario"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890646968308-k7gg0bbb2s4mj1cf952bbau8ia71m4hk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wendergalan.autenticacaousuario",
+            "certificate_hash": "4d85247968ec9a9c1325eb2efcbac44db74737f6"
+          }
+        },
+        {
+          "client_id": "890646968308-6k9l98k2a3ofolobk3172q004naent3o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSzlTUf1271uCvwo_gdES6JAu2lg9fXNw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890646968308-6k9l98k2a3ofolobk3172q004naent3o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
