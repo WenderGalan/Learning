@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TaskClass.iml" filepath="$PROJECT_DIR$/TaskClass.iml" />
+      <module fileurl="file://C:\Users\Wender Galan\Desktop\Aprendizado\Android Studio\TaskClass\TaskClass.iml" filepath="C:\Users\Wender Galan\Desktop\Aprendizado\Android Studio\TaskClass\TaskClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Wender Galan\Desktop\Aprendizado\Android Studio\TaskClass\app\app.iml" filepath="C:\Users\Wender Galan\Desktop\Aprendizado\Android Studio\TaskClass\app\app.iml" />
     </modules>
   </component>
 </project>
