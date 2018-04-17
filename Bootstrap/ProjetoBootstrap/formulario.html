@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Formulários</title>
+    
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   
+   	<div class="container">
+      
+      <div class="page-header">
+        <h1>Formulários com Bootstrap</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <h3>Cadastre-se</h3>
+          <form>
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" placeholder="Digite seu nome" class="form-control" id="nome">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" placeholder="Digite seu email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="senha">Senha</label>
+              <input type="password" placeholder="Digite sua senha" class="form-control" id="senha">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name=""> Concordo com os temos do serviço
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="sexo"> Feminino
+              </label>
+              <label>
+                <input type="radio" name="sexo"> Masculino
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+          </form>
+        </div>
+        <div class="col-sm-4">
+          <h3>Logar</h3>
+          <div class="form-group">
+              <label for="email2">E-mail</label>
+              <input type="email" placeholder="Digite seu email" class="form-control" id="email2">
+          </div>
+          <div class="form-group">
+              <label for="senha2">Senha</label>
+              <input type="password" placeholder="Digite sua senha" class="form-control" id="senha2">
+          </div>
+          <button type="submit" class="btn btn-primary">Logar</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
