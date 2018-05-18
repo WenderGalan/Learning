@@ -1,9 +1,14 @@
 package com.example.tdr.roomapplication;
 
+import android.arch.lifecycle.LiveData;
+import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProvider;
+import android.arch.lifecycle.ViewModelProviders;
 import android.arch.persistence.room.Room;
 import android.content.Context;
 import android.databinding.DataBindingUtil;
 import android.os.AsyncTask;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -31,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView telefoneText;
     private Button proximo;
     private int contador = 0;
+    private Button update;
     private List<User> usuarios = new ArrayList<>();
 
 
@@ -47,9 +53,14 @@ public class MainActivity extends AppCompatActivity {
         nomeText = findViewById(R.id.textNome);
         telefoneText = findViewById(R.id.textTelefone);
         proximo = findViewById(R.id.botaoProximo);
+        update = findViewById(R.id.buttonUpdate);
 
         final AppDatabase db = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "database").build();
 
+        MyViewModel model = ViewModelProviders.of(this).get(MyViewModel.class);
+        model.getUsers().observe(this, users ->{
+            binding.setUser(users.get(0));
+        });
 
 
         salvar.setOnClickListener(new View.OnClickListener() {
@@ -96,6 +107,29 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new AsyncTask<Void, Void, Void>() {
+
+                    @Override
+                    protected Void doInBackground(Void... voids) {
+                        User user = new User(1, nome.getText().toString().toUpperCase(), sobrenome.getText().toString().toUpperCase(), telefone.getText().toString().toUpperCase());
+                        db.userDao().updateFirstUser(user);
+                        binding.setUser(user);
+                        binding.notifyChange();
+                        return null;
+                    }
+
+                    @Override
+                    protected void onPostExecute(Void aVoid) {
+                        super.onPostExecute(aVoid);
+                        Toast.makeText(getApplicationContext(), "Usuário atualizado", Toast.LENGTH_LONG).show();
+                    }
+                }.execute();
+            }
+        });
+
         pesquisar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -133,27 +167,16 @@ public class MainActivity extends AppCompatActivity {
                 }*/
 
 
-                new AsyncTask<Void, Void, Void>() {
-
-
+                /*LiveData<List<User>> users = db.userDao().getAll();
+                users.observe(MainActivity.this, new Observer<List<User>>() {
                     @Override
-                    protected Void doInBackground(Void... voids) {
-
-                        List<User> users = db.userDao().getAll();
+                    public void onChanged(@Nullable List<User> users) {
                         usuarios = users;
-
-                        return null;
-                    }
-
-                    @Override
-                    protected void onPostExecute(Void aVoid) {
-                        super.onPostExecute(aVoid);
-                        if (usuarios != null && usuarios.size() > 0){
+                        *//*if (usuarios != null && usuarios.size() > 0) {
                             binding.setUser(usuarios.get(contador));
-                            binding.notifyChange();
-                        }
+                        }*//*
                     }
-                }.execute();
+                });*/
 
 
 
@@ -165,14 +188,14 @@ public class MainActivity extends AppCompatActivity {
         proximo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (contador == usuarios.size()){
+                if (contador == usuarios.size()) {
                     binding.setUser(usuarios.get(contador));
                     binding.notifyChange();
-                }else if (contador < usuarios.size() - 1){
+                } else if (contador < usuarios.size() - 1) {
 
                     binding.setUser(usuarios.get(++contador));
                     binding.notifyChange();
-                }else{
+                } else {
                     contador = 0;
                     binding.setUser(usuarios.get(contador));
                     binding.notifyChange();

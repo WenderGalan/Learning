@@ -2,6 +2,7 @@ package com.example.tdr.roomapplication;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.Ignore;
 import android.arch.persistence.room.PrimaryKey;
 
 @Entity(tableName = "user")
@@ -18,12 +19,21 @@ public class User {
     @ColumnInfo(name = "telefone")
     private String telefone;
 
-
+    @Ignore
     public User(String firstName, String lastName, String telefone) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.telefone = telefone;
     }
+
+    @Ignore
+    public User(int uid, String firstName, String lastName, String telefone) {
+        this.uid = uid;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.telefone = telefone;
+    }
+
 
     public User(){}
 

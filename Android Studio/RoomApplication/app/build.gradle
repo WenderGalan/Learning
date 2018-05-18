@@ -20,6 +20,10 @@ android {
     dataBinding {
         enabled = true
     }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
 }
 
 dependencies {
@@ -33,5 +37,7 @@ dependencies {
     annotationProcessor "android.arch.persistence.room:compiler:1.1.0"
     implementation "android.arch.persistence.room:rxjava2:1.1.0"
     implementation "android.arch.persistence.room:guava:1.1.0"
+    implementation "android.arch.lifecycle:runtime:1.1.1"
+    implementation "android.arch.lifecycle:extensions:1.1.1"
 
 }
