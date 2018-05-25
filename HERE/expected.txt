@@ -1,4 +1,6 @@
-possui_ref_familiar=Column{name='possui_ref_familiar', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
+Found:
+
+name='possui_ref_familiar', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='acesso_higiene_banho', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='frequenta_escola', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='causa_inter_12_meses', type='TEXT', affinity='2', notNull=false, primaryKeyPosition=0}
@@ -6,7 +8,7 @@ name='tem_acesso_higiene', type='INTEGER', affinity='3', notNull=false, primaryK
 name='tempo_situacao_rua', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='uuid', type='TEXT', affinity='2', notNull=true, primaryKeyPosition=0}
 name='respiratoria_enfisema', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
-name='id_ocupacao', type='TEXT', affinity='2', notNull=false, primaryKeyPosition=0}
+name='id_ocupacao', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='data_naturalizacao', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='sexo', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='tipo_nacionalidade', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
@@ -42,7 +44,7 @@ name='nome_responsavel', type='TEXT', affinity='2', notNull=false, primaryKeyPos
 name='tem_hipertensao', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='visita_familiar_freq', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='nome_mae', type='TEXT', affinity='2', notNull=false, primaryKeyPosition=0}
-name='id_naturalidade', type='TEXT', affinity='2', notNull=false, primaryKeyPosition=0}
+name='id_naturalidade', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='numero_na_familia', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='alimentar_doacao_popular', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='respiratoria_asma', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
@@ -61,7 +63,7 @@ name='cartao_sus', type='TEXT', affinity='2', notNull=false, primaryKeyPosition=
 name='alimentar_restaurante_popular', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='inf_ident_genero', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='condicao_saude_2', type='TEXT', affinity='2', notNull=false, primaryKeyPosition=0}
-name='id_etnia', type='TEXT', affinity='2', notNull=false, primaryKeyPosition=0}
+name='id_etnia', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='acomp_instiuicao_nome', type='TEXT', affinity='2', notNull=false, primaryKeyPosition=0}
 name='tem_doenca_respiratoria', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='nis', type='TEXT', affinity='2', notNull=false, primaryKeyPosition=0}
@@ -107,7 +109,7 @@ name='desc_plantas_medicinais', type='TEXT', affinity='2', notNull=false, primar
 name='inf_orientacao_sexual', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='acesso_higiene_outros', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='frequenta_benzedeira', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
-name='id_pais_nascimento', type='TEXT', affinity='2', notNull=false, primaryKeyPosition=0}
+name='id_pais_nascimento', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='dependente_drogas', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
-name='tem_teve_cancer', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}}
+name='tem_teve_cancer', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 ForeignKey{referenceTable='cidade', onDelete='NO ACTION', onUpdate='NO ACTION', columnNames=[id_naturalidade], referenceColumnNames=[_id]}, ForeignKey{referenceTable='etnia', onDelete='NO ACTION', onUpdate='NO ACTION', columnNames=[id_etnia], referenceColumnNames=[_id]}, ForeignKey{referenceTable='ocupacao', onDelete='NO ACTION', onUpdate='NO ACTION', columnNames=[id_ocupacao], referenceColumnNames=[_id]}, ForeignKey{referenceTable='familia', onDelete='NO ACTION', onUpdate='NO ACTION', columnNames=[id_familia], referenceColumnNames=[_id]}, ForeignKey{referenceTable='pais', onDelete='NO ACTION', onUpdate='NO ACTION', columnNames=[id_pais_nascimento], referenceColumnNames=[_id]}], indices=[]}
