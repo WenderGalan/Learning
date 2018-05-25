@@ -9,13 +9,13 @@ name='acao_mecanica', type='INTEGER', affinity='3', notNull=false, primaryKeyPos
 name='desnutricao', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='puerpera', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='compartilhada', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
-name='id', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=1}
 name='tabagista', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='convite_atv_coletivas', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='usuario_alcool', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='desfecho', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='rescem_nascido', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='visita_periodica', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
+name='deletado', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='hanseniase', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='sincronizado', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='asma', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
@@ -26,15 +26,16 @@ name='hipertensao', type='INTEGER', affinity='3', notNull=false, primaryKeyPosit
 name='saude_mental', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='cancer', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='tratamento_focal', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
-name='altura', type='REAL', affinity='4', notNull=true, primaryKeyPosition=0}
+name='altura', type='REAL', affinity='4', notNull=false, primaryKeyPosition=0}
 name='condicionalidade_b_f_2', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='crianca', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='diabetes', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='doencas_cronicas', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='vacina', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='engresso_internacao', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
-name='peso', type='REAL', affinity='4', notNull=true, primaryKeyPosition=0}
+name='peso', type='REAL', affinity='4', notNull=false, primaryKeyPosition=0}
 name='condicionalidade_b_f', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
+name='_id', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=1}
 name='outros', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='consulta', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='reabilitacao_deficiente', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
@@ -49,4 +50,3 @@ name='domiciliado_acamado', type='INTEGER', affinity='3', notNull=false, primary
 name='orientacao_prevencao', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='id_domicilio', type='INTEGER', affinity='3', notNull=true, primaryKeyPosition=0}
 foreignKeys=[ForeignKey{referenceTable='cidade', onDelete='NO ACTION', onUpdate='NO ACTION', columnNames=[id_cidadao], referenceColumnNames=[_id]}, ForeignKey{referenceTable='domicilio', onDelete='NO ACTION', onUpdate='NO ACTION', columnNames=[id_domicilio], referenceColumnNames=[_id]}], indices=[]}
- 
