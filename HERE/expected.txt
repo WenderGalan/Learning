@@ -16,4 +16,5 @@ name='mudou', type='INTEGER', affinity='3', notNull=true, primaryKeyPosition=0}
 name='valor_aluguel_prestacao', type='REAL', affinity='4', notNull=false, primaryKeyPosition=0}
 name='_id', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=1}
 name='data_entrada_domicilio', type='INTEGER', affinity='3', notNull=true, primaryKeyPosition=0}
+name='id_domicilio', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 foreignKeys=[ForeignKey{referenceTable='domicilio', onDelete='NO ACTION', onUpdate='NO ACTION', columnNames=[id_domicilio_novo], referenceColumnNames=[_id]}], indices=[]}
