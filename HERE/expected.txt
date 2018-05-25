@@ -1,7 +1,7 @@
 name='inst_resp_cns', type='TEXT', affinity='2', notNull=false, primaryKeyPosition=0}
-name='tp_imovel', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
+name='tp_imovel', type='INTEGER', affinity='3', notNull=true, primaryKeyPosition=0}
 name='uuid', type='TEXT', affinity='2', notNull=true, primaryKeyPosition=0}
-name='dificil_acesso', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
+name='dificil_acesso', type='INTEGER', affinity='3', notNull=true, primaryKeyPosition=0}
 name='tp_domicilio', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='inst_resp_telefone', type='TEXT', affinity='2', notNull=false, primaryKeyPosition=0}
 name='tp_consumo_agua', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
@@ -12,9 +12,9 @@ name='tp_material_predominante', type='INTEGER', affinity='3', notNull=false, pr
 name='_id', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=1}
 name='inst_resp_cargo', type='TEXT', affinity='2', notNull=false, primaryKeyPosition=0}
 name='form_esc_banheiro', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
-name='risco_algamento', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
+name='risco_algamento', type='INTEGER', affinity='3', notNull=true, primaryKeyPosition=0}
 name='longitude', type='REAL', affinity='4', notNull=false, primaryKeyPosition=0}
-name='id_endereco', type='TEXT', affinity='2', notNull=false, primaryKeyPosition=0}
+name='id_endereco', type='INTEGER', affinity='3', notNull=true, primaryKeyPosition=0}
 name='deletado', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='cond_posse_uso_terra', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='sincronizado', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
@@ -27,10 +27,10 @@ name='inst_outros_prof_vinculados', type='INTEGER', affinity='3', notNull=false,
 name='tp_abastecimento_agua', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='tp_disp_energia', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
 name='destino_lixo', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
-name='data_cadastro', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
-name='area_conflito', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
+name='data_cadastro', type='INTEGER', affinity='3', notNull=true, primaryKeyPosition=0}
+name='area_conflito', type='INTEGER', affinity='3', notNull=true, primaryKeyPosition=0}
 name='inst_nome', type='TEXT', affinity='2', notNull=false, primaryKeyPosition=0}
 name='latitude', type='REAL', affinity='4', notNull=false, primaryKeyPosition=0}
 name='qtd_banheiros', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
-name='recusou_cadastro', type='INTEGER', affinity='3', notNull=false, primaryKeyPosition=0}
+name='recusou_cadastro', type='INTEGER', affinity='3', notNull=true, primaryKeyPosition=0}
 foreignKeys=[ForeignKey{referenceTable='endereco', onDelete='NO ACTION', onUpdate='NO ACTION', columnNames=[id_endereco], referenceColumnNames=[_id]}], indices=[]}
