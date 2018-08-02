@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "763087913306",
+    "firebase_url": "https://testwithandroid-bf646.firebaseio.com",
+    "project_id": "testwithandroid-bf646",
+    "storage_bucket": "testwithandroid-bf646.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763087913306:android:11d1fa4aa6a09da4",
+        "android_client_info": {
+          "package_name": "com.example.wender.kotlinmessage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763087913306-lqsrjgg27hdisjejnf9gjv683mdgbv12.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wender.kotlinmessage",
+            "certificate_hash": "1751c06225ad6cd84278d47b937cac91591b2f30"
+          }
+        },
+        {
+          "client_id": "763087913306-65rtkgk5uol0rimpfgm24c6854v839lo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlEVZCY4oG22PfGZ5UXrc7uCrEwbdBTB0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763087913306-65rtkgk5uol0rimpfgm24c6854v839lo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
