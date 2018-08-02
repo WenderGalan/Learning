@@ -1,0 +1,26 @@
+.padrao1{
+    
+    color:blue;
+    font-family: verdana;
+    font-size: 20px;
+    
+}
+
+.padrao2{
+    
+    color:crimson;
+    font-family: arial;
+    background-color: cornflowerblue;
+    border: 1px solid yelow :
+    
+}
+
+.caixaInfo{
+    background-color: burlywood;
+    border: solid 2px black;
+    padding: 8px;
+    width:200px;
+
+    
+    
+}
