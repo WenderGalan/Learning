@@ -71,4 +71,9 @@ class MainActivity : AppCompatActivity() {
 
         notificationManager.notify(1, builder.build())
     }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+    }
 }
