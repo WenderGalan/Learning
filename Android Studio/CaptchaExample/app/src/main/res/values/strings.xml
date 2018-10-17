@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CaptchaExample</string>
+    <string name="my_site_key">6LncXUUAAAAAFfK9j42k3KAuU4yxE1rOvh_vJ-B</string>
+    <string name="my_key_secret">6LncXUUAAAAAEPKWHXeQtOK479Iyr13-Y9kGdhn</string>
+</resources>
