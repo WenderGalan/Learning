@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\TDR\.android\build-cache\85d9890026818bf28ec265b88eb408645d421570\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="32ab8bede8cd600f25a5bb3fe15068c81c8910dc">
+        <dex dex="C:\Users\TDR\Desktop\Learning\Android Studio\Android N\app\build\intermediates\pre-dexed\completed\debug\classes_b1d2c4b43eb4cad1c692838a3019c3ca959dd24d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\TDR\.android\build-cache\16ff175842b921905b6427771cfb4e47da7bd505\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bf5aa3b026d5b5fd9f4ab5e8cf13499b9e016dfb">
+        <dex dex="C:\Users\TDR\Desktop\Learning\Android Studio\Android N\app\build\intermediates\pre-dexed\completed\debug\classes_9a81bcefa88b6dffcf0364f428953635a81c7fa3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\TDR\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0-alpha2\support-annotations-24.0.0-alpha2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8071e1e6cd07e9253720313d6c14286a7ee424e0">
+        <dex dex="C:\Users\TDR\Desktop\Learning\Android Studio\Android N\app\build\intermediates\pre-dexed\completed\debug\support-annotations-24.0.0-alpha2_a0fee59285554ca1f25c7dfa1d512a9f4817a0e5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\TDR\.android\build-cache\c24d453d4ad3c15988186e0dd1c37ec9b56fa708\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="661a632c3b434991d6364690cbe0f786371101cc">
+        <dex dex="C:\Users\TDR\Desktop\Learning\Android Studio\Android N\app\build\intermediates\pre-dexed\completed\debug\classes_ce8ec7dc4c05685b8581e79f9f61e9215c7cb18b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\TDR\.android\build-cache\9577ea27499896efbbe1866c7dd5e0c240fa6535\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="df7f6513d6e2aaa302bbac654807c6129b517090">
+        <dex dex="C:\Users\TDR\Desktop\Learning\Android Studio\Android N\app\build\intermediates\pre-dexed\completed\debug\classes_1a3d66a81dabc0f4b9a35d978c2d714601910203.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\TDR\.android\build-cache\85d9890026818bf28ec265b88eb408645d421570\output\jars\libs\internal_impl-24.0.0-alpha2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e460bc069dfd21d22770cf2a2370c9021b9c98a2">
+        <dex dex="C:\Users\TDR\Desktop\Learning\Android Studio\Android N\app\build\intermediates\pre-dexed\completed\debug\internal_impl-24.0.0-alpha2_d05895658342a0bc41312068660152c3e9a41a33.jar" />
+    </item>
+
+</items>
