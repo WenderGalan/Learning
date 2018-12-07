@@ -1,6 +1,6 @@
 # NativeScript-Vue Application
 
-> hello world
+> Tagnos Professor
 
 ## Usage
 
