@@ -1,0 +1,20 @@
+/* @Configuration
+public class WebSocketSecurityConfig extends AbstractSecurityWebSocketMessageBrokerConfigurer {
+
+    @Override
+    protected void configureInbound(MessageSecurityMetadataSourceRegistry messages) {
+        messages
+                // Qualquer mensagem sem um destino precisa estar autenticado
+                .nullDestMatcher().authenticated()
+                // Qualquer um pode se inscrever nessa URl
+                .simpSubscribeDestMatchers("/user/queue/errors").permitAll()
+                // Qualquer mensagem com destino que contenha /app precisa tenha a função USER
+                .simpDestMatchers("/app/**").hasRole("USER")
+                // Qualquer mensagem que comece com /user ou /topic/friends do tipo subscribe exigirá USER
+                .simpSubscribeDestMatchers("/user/**", "/topic/friends/*").hasRole("USER")
+                // Qualquer outro tipo de mensagem do tipo MESSAGE ou SUBSCRIBE será rejeitada
+                .simpTypeMatchers(SimpMessageType.MESSAGE, SimpMessageType.SUBSCRIBE).denyAll()
+                // Qualquer outra mensagem é rejeitada
+                .anyMessage().denyAll();
+    }
+} */
