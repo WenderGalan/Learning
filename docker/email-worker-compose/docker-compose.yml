@@ -1,6 +1,9 @@
 version: '3'
 volumes:
   dados:
+networks:
+  banco:
+  web:
 services:
   db:
     image: postgres:9.6
@@ -11,6 +14,8 @@ services:
       - ./scripts:/scripts
       # Convenção do postgresql
       - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - banco
   frontend:
     image: nginx:1.13
     volumes:
@@ -20,6 +25,11 @@ services:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
     ports:
       - 80:80
+    networks:
+      - web
+    depends_on:
+      # Depende do app para funcionar corretamente
+      - app
   app:
     image: python:3.6
     volumes:
@@ -27,3 +37,8 @@ services:
       - ./app:/app
     working_dir: /app
     command: bash ./app.sh
+    networks:
+      - banco
+      - web
+    depends_on:
+      - db
